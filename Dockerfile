@@ -7,7 +7,7 @@ WORKDIR /app
 COPY target/pruebatecnica9-0.0.1-SNAPSHOT.jar app.jar
 
 # Copiar base de datos semilla incluida en el repositorio
-COPY data/clientes.db clientes.db
+# COPY data/clientes.db clientes.db
 
 # Exponer el puerto
 EXPOSE 8081
