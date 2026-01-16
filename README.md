@@ -7,7 +7,7 @@ Aplicación REST con:
 - Endpoint de reporte por cliente
 
 1. Clientes
-Base URL: http://localhost:8081/api/clientes
+Base URL: http://localhost:8082/api/clientes
 
 Método  |  Endpoint | Descripción. 
 - GET /api/clientes Lista todos los clientes. 
@@ -18,10 +18,10 @@ Método  |  Endpoint | Descripción.
 
   Reporte por cliente
 - GET /api/clientes/{id}/reporte Reporte: Cliente + Cuentas + Saldo Total N/A.
-Ejemplo URL: http://localhost:8081/api/clientes/1/reporte
+Ejemplo URL: http://localhost:8082/api/clientes/1/reporte
 
 2. Cuentas Bancarias
-Base URL: http://localhost:8081/api/cuentas.
+Base URL: http://localhost:8082/api/cuentas.
 
 Método  |  Endpoint | Descripción 
 - GET /api/cuentas Lista todas las cuentas.
@@ -39,5 +39,5 @@ Reporte por cliente
 3. mvn -DskipTests=true package
 4. docker-compose up --build
 
-- La aplicación queda en http://localhost:8081 
+- La aplicación queda en http://localhost:8082
 
