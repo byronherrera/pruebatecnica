@@ -15,7 +15,10 @@ Método  |  Endpoint | Descripción.
 - POST /api/clientes Crea un nuevo cliente.
 - PUT /api/clientes/{id} Actualiza datos de un cliente.
 - DELETE /api/clientes/{id} Elimina un cliente N/A .
-- GET /api/clientes/{id}/reporte Reporte : Cliente + Cuentas + Saldo Total N/A.
+
+  Reporte por cliente
+- GET /api/clientes/{id}/reporte Reporte: Cliente + Cuentas + Saldo Total N/A.
+Ejemplo URL: http://localhost:8081/api/clientes/1/reporte
 
 2. Cuentas Bancarias
 Base URL: http://localhost:8081/api/cuentas.
@@ -25,7 +28,8 @@ Método  |  Endpoint | Descripción
 - GET /api/cuentas/{id} Obtiene una cuenta por ID. 
 - POST /api/cuentas?clienteId={id} Crea una cuenta para un cliente. 
 - PUT /api/cuentas/{id} Actualiza una cuenta.
-- DELETE /api/cuentas/{id} Elimina una cuenta. 
+- DELETE /api/cuentas/{id} Elimina una cuenta.
+Reporte por cliente 
 - GET /api/cuentas/por-cliente/{id} Lista solo las cuentas de un cliente.
 
 3. Instalación
