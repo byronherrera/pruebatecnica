@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - "8081:8081"
+    volumes:
+      - ./data:/app/data
+    environment:
+      # Sobrescribir la URL para guardar la DB en un volumen persistente
+      - SPRING_DATASOURCE_URL=jdbc:sqlite:/app/data/clientes.db
